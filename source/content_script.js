@@ -59,8 +59,8 @@ function confuseNames() {
     firstRandomIndex = Math.floor(Math.random() * firstNames.length);
     lastRandomIndex = Math.floor(Math.random() * lastNames.length);
 
-    first = firstNames[firstRandomIndex];
-    last = lastNames[lastRandomIndex];
+    first = firstNames.splice(firstRandomIndex, 1);
+    last = lastNames.splice(lastRandomIndex, 1);
 
     if (first == undefined || first == "") {
       first = "Sam"
