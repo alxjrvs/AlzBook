@@ -21,7 +21,6 @@ function addOverlay() {
   btn.href = "http://act.alz.org/site/TR?fr_id=8480&pg=entry"
   btn.id = 'end-alz-btn'
   btn.target = "_blank"
-
   document.body.appendChild(btn)
 }
 
@@ -114,6 +113,7 @@ function tellJoke() {
 
 function endAlz() {
   console.log("#EndAlz");
+  addOverlay();
   makeBlurry();
   confuseNames();
   tellJoke();
