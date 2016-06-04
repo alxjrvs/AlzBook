@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "AlzBook",
   "version": "0.1.0",
   "description": "Empathize with those suffering from Alzheimers by changing the way you interact with Facebook",
