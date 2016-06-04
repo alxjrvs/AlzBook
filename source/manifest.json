@@ -3,6 +3,12 @@
   "name": "AlzBook",
   "version": "0.1.0",
   "description": "Empathize with those suffering from Alzheimers by changing the way you interact with Facebook",
+  "browser_action": {
+    "default_icon": {
+      "19": "endalz_19.png",
+      "38": "endalz_38.png"
+    }
+  },
   "content_scripts":
   [
     {
