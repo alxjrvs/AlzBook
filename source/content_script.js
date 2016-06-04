@@ -47,11 +47,21 @@ function confuseNames() {
     first = firstNames[firstRandomIndex];
     last = lastNames[lastRandomIndex];
 
+    if (first == undefined || first == "") {
+      first = "Sam"
+    };
+
+    if (last == undefined || last == "") {
+      last = "Kent"
+    };
+
     link = nameSpans[i].children[0]
 
     if (link != undefined) {
       name = first + " " + last;
-
+      if (name == undefined || name == "") {
+        name = "Sam Kent"
+      } 
       link.text = name
 
       if(twentyPercentChance()){
