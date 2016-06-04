@@ -1,5 +1,8 @@
 # crispy-guacamole
 
+![alt tag](http://www.alz.org/images/2012_banner/logo_alz.jpg)
+
+
 A Chrome Plugin that tries to emulate the confusion and lack-of-confidence that comes with alzheimers
 
 This chrome extension aims to simulate the symptoms of Alzheimer’s disease by making the familiarity of friends, family and objects disappear into the fog of Alzheimer’s.
