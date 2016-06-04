@@ -1,13 +1,17 @@
 jokes = [
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  ""
+  "I have six locks on my door all in a row. When I go out, I lock every other one. I figure no matter how long somebody stands there picking the locks, they are always locking three.",
+  "Always borrow money from a pessimist. He won’t expect it back.",
+  "The scientific theory I like best is that the rings of Saturn are composed entirely of lost airline luggage.",
+  "Friendship is like peeing on yourself: everyone can see it, but only you get the warm feeling that it brings.",
+  "First the doctor told me the good news: I was going to have a disease named after me.",
+  "A successful man is one who makes more money than his wife can spend. A successful woman is one who can find such a man.",
+  "A successful man is one who makes more money than his wife can spend. A successful woman is one who can find such a man.",
+  "My therapist told me the way to achieve true inner peace is to finish what I start. So far I’ve finished two bags of M&Ms and a chocolate cake. I feel better already.",
+  "Dogs have masters. Cats have staff."
+  "if you carn't have midnight snack why do we have a light in the fridge ??"
+  "Probably the worst thing you can hear when you’re wearing a bikini is “Good for you!”"
+  "When I lost my rifle, the Army charged me $85. That’s why in the Navy, the captain goes down with the ship."
+  "A conference call is the best way for a dozen people to say “bye” 300 times."
 ]
 
 function twentyPercentChance(){
