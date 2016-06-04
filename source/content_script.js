@@ -22,12 +22,12 @@ function makeBlurry() {
   }
 }
 
-function confuseNames() { 
+function confuseNames() {
   nameSpans = document.getElementsByClassName("fwb");
   firstNames = [];
   lastNames = [];
 
-  for ( var i=0; i < nameSpans.length; i++) { 
+  for ( var i=0; i < nameSpans.length; i++) {
     name = nameSpans[i].innerText;
     split = name.split(" ")
     first = split[0];
@@ -57,7 +57,7 @@ function confuseNames() {
       if(twentyPercentChance()){
         link.classList.add('textshadow');
       };
-    } 
+    }
   };
 
   firstNames = [];
@@ -67,9 +67,9 @@ function confuseNames() {
 
 function endAlz() {
   console.log("#EndAlz");
-  addOverlay();
   makeBlurry();
   confuseNames();
 }
 
+addOverlay();
 setInterval(endAlz, 10000);
