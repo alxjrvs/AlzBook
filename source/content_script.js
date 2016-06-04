@@ -30,6 +30,7 @@ function makeBlurry() {
   var getImg = document.querySelectorAll("img");
 
   for (var i = 0; i < getImg.length; i++) {
+    getImg[i].classList.remove("blurry");
 
     if(twentyPercentChance()){
       getImg[i].classList.toggle("blurry");
