@@ -1,15 +1,20 @@
 #end-alz-btn {
   font-family: 'UniversLTStd-BoldCn', sans-serif;
+  font-weight: bold;
   position: fixed;
-  left: 10px;
+  left: 20px;
   bottom: 20px;
   width: 180px;
-  background: #fff203;
-  color: #62328f;
-  font-size: 20px;
+  padding: 5px;
+  color: #ffffff;
+  background: #62328f;
+  font-size: 18px;
   text-align: center;
   text-decoration: none;
   z-index: 100;
+  box-shadow: -2px 3px 3px #c0c0c0;
+  letter-spacing: 1px;
+  border-radius: 5px;
 }
 #end-alz-btn:visited {
   text-decoration: none;
@@ -17,7 +22,7 @@
 #end-alz-btn:hover {
   text-decoration: none;
   color: #fff203;
-  background: #62328f;
+  background: #552b7c;
 }
 
 .blurry {

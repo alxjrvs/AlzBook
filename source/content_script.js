@@ -3,6 +3,7 @@ function addOverlay() {
   btn.text = "#EndAlz"
   btn.href = "http://act.alz.org/site/TR?fr_id=8480&pg=entry"
   btn.id = 'end-alz-btn'
+  btn.target = "_blank"
 
   document.body.appendChild(btn)
 }
