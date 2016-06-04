@@ -1,0 +1,15 @@
+{
+  "manifest_version": 1,
+  "name": "AlzBook",
+  "version": "0.1.0",
+  "description": "Empathize with those suffering from Alzheimers by changing the way you interact with Facebook",
+  "content_scripts": 
+  [
+    {
+      "matches": ["https://*.facebook.com/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
+
