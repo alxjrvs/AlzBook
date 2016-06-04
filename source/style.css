@@ -11,9 +11,11 @@
   text-decoration: none;
   z-index: 100;
 }
+
 #end-alz-btn:visited {
   text-decoration: none;
 }
+
 #end-alz-btn:hover {
   text-decoration: none;
   color: #fff203;
@@ -23,3 +25,8 @@
 .blurry {
   -webkit-filter: blur(2px);
 }
+
+.textshadow {
+   color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+ }
