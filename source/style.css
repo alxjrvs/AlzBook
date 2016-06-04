@@ -1,0 +1,21 @@
+#end-alz-btn { 
+  font-family: 'UniversLTStd-BoldCn', sans-serif;
+  position: fixed;
+  left: 10px;
+  bottom: 20px;
+  width: 180px;
+  background: #fff203;
+  color: #62328f;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 100;
+} 
+#end-alz-btn:visited { 
+  text-decoration: none;
+} 
+#end-alz-btn:hover { 
+  text-decoration: none;
+  color: #fff203;
+  background: #62328f;
+} 
