@@ -76,6 +76,7 @@ function confuseNames() {
       if (name == undefined || name == "") {
         name = "Sam Kent"
       } 
+      console.log(link.text + " is Now " + name);
       link.text = name
 
       if(twentyPercentChance()){
@@ -94,15 +95,15 @@ function confuseLinks(){
   links = document.getElementsByTagName('a');
 
   for (var i = 0; i < links.length; i++) { 
-    if(twentyPercentChance()){
-      randomHref = Math.floor(Math.random() * links.length).href;
-      links[i].href = randomHref;
-      console.log(links.text + " now goes to " + randomHref);
+    if (twentyPercentChance()) {
+      link = links[i]
+      randomHref = links[Math.floor(Math.random() * links.length)].href
+      link.href = randomHref;
+      console.log(link.text + " now goes to " + randomHref);
     };
   };
 
 }
-
 
 function tellJoke() { 
   if(twentyPercentChance()) { 
