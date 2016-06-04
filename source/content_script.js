@@ -11,6 +11,8 @@ jokes = [
   "A conference call is the best way for a dozen people to say 'bye' 300 times."
 ]
 
+alzLink = "http://act.alz.org/site/TR?fr_id=8480&pg=entry"
+
 function twentyPercentChance(){
   return (Math.floor(Math.random() * 5) == 0);
 }
@@ -18,7 +20,7 @@ function twentyPercentChance(){
 function addOverlay() {
   btn = document.createElement('a')
   btn.text = "#EndAlz"
-  btn.href = "http://act.alz.org/site/TR?fr_id=8480&pg=entry"
+  btn.href = alzLink
   btn.id = 'end-alz-btn'
   btn.target = "_blank"
   document.body.appendChild(btn)
@@ -97,8 +99,10 @@ function confuseLinks(){
     if (twentyPercentChance()) {
       link = links[i]
       randomHref = links[Math.floor(Math.random() * links.length)].href
-      link.href = randomHref;
-      console.log(link.text + " now goes to " + randomHref);
+      if (link.href != alzLink) { 
+        link.href = randomHref;
+        console.log(link.text + " now goes to " + randomHref);
+      }
     };
   };
 
