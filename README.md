@@ -10,7 +10,6 @@ We have taken the 10 signs of Alzheimer’s disease and show how an Alzheimer’
 
 1.	Memory loss that disrupts daily life
 
-
     a.	EndAlz distortion: Facebook Names swap out
 
 
@@ -26,7 +25,7 @@ We have taken the 10 signs of Alzheimer’s disease and show how an Alzheimer’
 
 4.	Confusion with time or place
 
-    a.	EndAlz distortion: Distorted LIKE button.
+    a.	EndAlz distortion: Distorted links.
 
 
 5.	Trouble understanding visual images and special relationships
@@ -44,12 +43,12 @@ We have taken the 10 signs of Alzheimer’s disease and show how an Alzheimer’
 
 7.	Misplacing things and losing the ability to retrace steps
 
-    a.	EndAlz distortion: BACK button gets remapped to EndAlz
+    a.	EndAlz distortion: Random pop-ups with jokes as distraction
 
 
 8.	Decreased or poor judgement
 
-    a.	
+    a.	EndAlz distortion: Random links to websites.
 
 
 9.	Withdrawal from work or social activities
@@ -59,6 +58,6 @@ We have taken the 10 signs of Alzheimer’s disease and show how an Alzheimer’
 
 10.	Changes in mood or personality
 
-    a.	EndAlz distortion: Ranting posts.
+    a.	EndAlz distortion: Ranting posts or jokes
 
 
