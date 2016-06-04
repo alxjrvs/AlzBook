@@ -37,6 +37,60 @@ function makeBlurry() {
   }
 }
 
+function confuseCommentNames() { 
+  nameSpans = document.getElementsByClassName("UFICommentActorName");
+  firstNames = [];
+  lastNames = [];
+
+  for ( var i=0; i < nameSpans.length; i++) {
+    name = nameSpans[i].innerText;
+    split = name.split(" ")
+    first = split[0];
+
+    split.shift();
+
+    last = split.join(" ");
+
+    firstNames.push(first);
+    lastNames.push(last);
+  };
+
+  for (var i=0; i < nameSpans.length; i++) {
+    firstRandomIndex = Math.floor(Math.random() * firstNames.length);
+    lastRandomIndex = Math.floor(Math.random() * lastNames.length);
+
+    first = firstNames.splice(firstRandomIndex, 1);
+    last = lastNames.splice(lastRandomIndex, 1);
+
+    if (first == undefined || first == "") {
+      first = "Sam"
+    };
+
+    if (last == undefined || last == "") {
+      last = "Kent"
+    };
+
+    link = nameSpans[i]
+
+    if (link != undefined) {
+      name = first + " " + last;
+      if (name == undefined || name == "") {
+        name = "Sam Kent"
+      } 
+      console.log(link.text + " is Now " + name);
+      link.text = name
+
+      if(twentyPercentChance()){
+        link.classList.toggle('textshadow');
+      };
+    }
+  };
+
+  firstNames = [];
+  lastNames = [];
+
+};
+
 function confuseNames() {
   nameSpans = document.getElementsByClassName("fwb");
   firstNames = [];
@@ -119,6 +173,7 @@ function endAlz() {
   console.log("#EndAlz");
   makeBlurry();
   confuseNames();
+  confuseCommentNames();
   if(twentyPercentChance()) {
     tellJoke();
   };
