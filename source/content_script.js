@@ -1,3 +1,15 @@
+jokes = [
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  ""
+]
+
 function twentyPercentChance(){
   return (Math.floor(Math.random() * 5) == 0);
 }
@@ -16,8 +28,9 @@ function makeBlurry() {
   var getImg = document.querySelectorAll("img");
 
   for (var i = 0; i < getImg.length; i++) {
+
     if(twentyPercentChance()){
-      getImg[i].classList.add("blurry");
+      getImg[i].classList.toggle("blurry");
     }
   }
 }
@@ -65,7 +78,7 @@ function confuseNames() {
       link.text = name
 
       if(twentyPercentChance()){
-        link.classList.add('textshadow');
+        link.classList.toggle('textshadow');
       };
     }
   };
@@ -75,11 +88,19 @@ function confuseNames() {
 
 };
 
+
+function tellJoke() { 
+  if(twentyPercentChance()) { 
+    index = Math.floor(Math.random() * jokes.length);
+    alert(jokes[index]);
+  }
+}
+
 function endAlz() {
   console.log("#EndAlz");
   makeBlurry();
   confuseNames();
+  tellJoke();
 }
 
-addOverlay();
-setInterval(endAlz, 10000);
+setInterval(endAlz, 7000);
