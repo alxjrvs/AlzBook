@@ -3,13 +3,13 @@
   "name": "AlzBook",
   "version": "0.1.0",
   "description": "Empathize with those suffering from Alzheimers by changing the way you interact with Facebook",
-  "content_scripts": 
+  "content_scripts":
   [
     {
       "matches": ["https://*.facebook.com/*"],
+      "css": ["style.css"],
       "js": ["content_script.js"],
       "run_at": "document_end"
     }
   ]
 }
-
