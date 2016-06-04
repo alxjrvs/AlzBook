@@ -117,11 +117,13 @@ function tellJoke() {
 
 function endAlz() {
   console.log("#EndAlz");
-  addOverlay();
   makeBlurry();
   confuseNames();
-  tellJoke();
+  if(twentyPercentChance()) {
+    tellJoke();
+  };
   confuseLinks();
 }
 
+addOverlay();
 setInterval(endAlz, 7000);
