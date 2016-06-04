@@ -1,3 +1,7 @@
+function twentyPercentChance(){
+  return (Math.floor(Math.random() * 5) == 0);
+}
+
 function addOverlay() {
   btn = document.createElement('a')
   btn.text = "#EndAlz"
@@ -11,12 +15,14 @@ function makeBlurry() {
   var getImg = document.querySelectorAll("img");
 
   for (var i = 0; i < getImg.length; i++) {
+    if(twentyPercentChance()){
       getImg[i].classList.add("blurry");
     }
+  }
 }
 
 function confuseNames() { 
-  nameSpans = document.getElementsByClassName("fwb fcg");
+  nameSpans = document.getElementsByClassName("fwb");
   firstNames = [];
   lastNames = [];
 
@@ -24,7 +30,11 @@ function confuseNames() {
     name = nameSpans[i].innerText;
     split = name.split(" ")
     first = split[0];
-    last = split[1];
+
+    split.shift();
+
+    last = split.join(" ");
+
     firstNames.push(first);
     lastNames.push(last);
   };
@@ -33,22 +43,32 @@ function confuseNames() {
     firstRandomIndex = Math.floor(Math.random() * firstNames.length);
     lastRandomIndex = Math.floor(Math.random() * lastNames.length);
 
-    first = firstNames.splice(firstRandomIndex, 1);
-    last = lastNames.splice(lastRandomIndex, 1);
+    first = firstNames[firstRandomIndex];
+    last = lastNames[lastRandomIndex];
 
-    name = first + last;
-    link = nameSpan[i].children[0]
-    link.text = name;
+    link = nameSpans[i].children[0]
 
-    blur = (Math.floor(Math.random() * 2) == 0);
+    if (link != undefined) {
+      name = first + " " + last;
 
-    if(blur){
-      link.classList.add('textshadow');
-    };
+      link.text = name
+
+      if(twentyPercentChance()){
+        link.classList.add('textshadow');
+      };
+    } 
   };
+
+  firstNames = [];
+  lastNames = [];
+
 };
 
+function endAlz() {
+  console.log("#EndAlz");
+  addOverlay();
+  makeBlurry();
+  confuseNames();
+}
 
-// blurText();
-addOverlay();
-makeBlurry();
+setInterval(endAlz, 10000);
